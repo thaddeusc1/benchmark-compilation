@@ -22,6 +22,7 @@ let
   pkgs             = (import nixpkgsSrc {}).pkgs;
 in
 { compiler         ? default-compiler
+, inNixShell 	     ? false
 }:
 with pkgs.lib;
 let
